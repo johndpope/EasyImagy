@@ -34,7 +34,12 @@ public struct Image<Pixel> : ImageProtocol {
     public subscript(xRange: CountableRange<Int>, yRange: CountableRange<Int>) -> ImageSlice<Pixel> {
         return ImageSlice(image: self, xRange: xRange, yRange: yRange)
     }
+    
+ 
+    
+    
 }
+
 
 extension Image { // Initializers for ImageSlice
 	public init(_ imageSlice: ImageSlice<Pixel>) {
