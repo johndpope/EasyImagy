@@ -30,18 +30,18 @@ internal func countableRange<R: RangeExpression>(from range: R, relativeTo colle
     return lowerBound..<upperBound
 }
 
-internal func countableRange(from range: CountableRange<Int>, relativeTo collection: CountableRange<Int>) -> CountableRange<Int> {
-    return range
-}
+// internal func countableRange(from range: CountableRange<Int>, relativeTo collection: CountableRange<Int>) -> CountableRange<Int> {
+//     return range
+// }
 
-internal func countableRange(from range: CountableClosedRange<Int>, relativeTo collection: CountableRange<Int>) -> CountableRange<Int> {
-    return CountableRange(range)
-}
+// internal func countableRange(from range: CountableClosedRange<Int>, relativeTo collection: CountableRange<Int>) -> CountableRange<Int> {
+//     return CountableRange(range)
+// }
 
-internal func countableRange(from range: Range<Int>, relativeTo collection: CountableRange<Int>) -> CountableRange<Int> {
-    return CountableRange(range)
-}
+// internal func countableRange(from range: Range<Int>, relativeTo collection: CountableRange<Int>) -> CountableRange<Int> {
+//     return CountableRange(range)
+// }
 
-internal func countableRange(from range: ClosedRange<Int>, relativeTo collection: CountableRange<Int>) -> CountableRange<Int> {
-    return CountableRange(range)
-}
+// internal func countableRange(from range: ClosedRange<Int>, relativeTo collection: CountableRange<Int>) -> CountableRange<Int> {
+//     return CountableRange(range)
+// }
